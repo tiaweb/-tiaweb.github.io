@@ -28,7 +28,24 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	
+	<style>
+		.video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+    .video-wrap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 1080px;
+    }
+	</style>
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
@@ -107,9 +124,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-			<div class="image-container">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/3W1Rvi1qnx8' frameborder='0' allowfullscreen></iframe></div>
-                    </div>
+			
 			
                     <div class="text-container">
                         <h3>Web Designer With Photoshop, Illustrator &amp; HTML/CSS Skills</h3>
@@ -133,8 +148,12 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/3W1Rvi1qnx8' frameborder='0' allowfullscreen></iframe></div>
-                    </div> <!-- end of image-container -->
+                        <div class="video-wrap">
+  
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3W1Rvi1qnx8&t=76s" frameborder="0" allowfullscreen></iframe>
+  
+  </div>
+			</div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
