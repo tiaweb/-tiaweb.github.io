@@ -30,6 +30,31 @@
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
@@ -114,10 +139,19 @@
 Dibangun dengan Bootstrap 4, HTML / CSS, dan JS, fitur formulir pengajuan CV yang berfungsi dengan lampiran file pdf / kata, kisi portofolio untuk daftar pekerjaan, morphtext, slider kartu untuk testimonial, detail lightbox, angka statistik untuk nilai-nilai penting, navigasi dropdown, halaman tambahan untuk rincian pekerjaan, layanan, harga, tentang, artikel, ketentuan, privasi, dan kontak.
 
 Templat ini memiliki desain cahaya yang bersih dengan ilustrasi modern yang mengatur nada yang tepat bagi pengunjung untuk menelusuri tawaran pekerjaan dan mengirimkan aplikasi CV mereka melalui formulir.
-<a class="data-toggle="collapse" href="#multiCollapseExample1" role="aria-expanded="false" aria-controls="multiCollapseExample1">Selengkapnya</a>
- 
-<div class="collapse multi-collapse" id="multiCollapseExample1">Tess</div>
-      
+<button type="button" class="collapsible">Open Section 1</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
 </div>
 </div></div>
 
@@ -213,6 +247,23 @@ Templat ini memiliki desain cahaya yang bersih dengan ilustrasi modern yang meng
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 	<script id="dsq-count-scr" src="//tiaweb.disqus.com/count.js" async></script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 
 </html>
