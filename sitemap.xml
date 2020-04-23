@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://tiaweb.github.io/</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/index.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/vuejs.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/reactjs.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/angularjs.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/html.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/service.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/pricing.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/about.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/services.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/job-details.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/article.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/terms.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/privacy.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/contact.html</loc>
+  <lastmod>2020-04-23T04:41:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
