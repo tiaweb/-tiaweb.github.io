@@ -9,20 +9,20 @@
   <meta name="google-site-verification=cGvkgt2oWQ-3kCOOxGHIcygm-J2wZANsFM5Huuw7eeg">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Viso landing page HTML template is based on Bootstrap and it's designed for recruiting agencies to display job listings and gather CV applications through the included form.">
+    <meta name="description" content="Tiaweb dibuat untuk mempelajari HTML dan CSS  sederhana untuk semua orang, pemula, desainer dan pengembang.">
     <meta name="google-site-verification" content="G3-7l_kYP77sUVyUvr21R7H8Xh_ciQyqZTOklsmecbY" />
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:site_name" content="Tiaweb" /> <!-- website name -->
+	<meta property="og:site" content="https://tiaweb.github.io" /> <!-- website link -->
+	<meta property="og:title" content="HTML DASAR"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Tiaweb dibuat untuk mempelajari HTML dan CSS  sederhana untuk semua orang, pemula, desainer dan pengembang." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://tiaweb.github.io/img/html.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://tiaweb.github.io/html.html" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
     <!-- Webpage Title -->
-    <title>Viso - Recruiting Agency Landing Page HTML Template</title>
+    <title>HTML DASAR </title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
@@ -53,7 +53,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-T29C6CP');</script>
 <!-- End Google Tag Manager -->
-
+  <script>	  
+fetch("https://tiaweb.github.io/docs/html/learn/menu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("menu").innerHTML = data;
+  });
+	    </script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
   
@@ -122,22 +130,27 @@ https://t.me/tiaweb">Komunitas</a>
 
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="text-container">
-                        <h3>Selamat Datang</h3>
-                        <p class="p-large">Maaf halaman ini sedang dalam pengembangan</p>
-                        <a class="btn-solid-lg page-scroll" href="index.html">Kembali</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/header.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+	    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+	    
+      <div class="image-container">
+                        <img class="img-fluid" src="images/header.svg" width="300" height="300" alt="alternative">
+                    </div>
+	    
+    </div>
+    <div class="col-sm">
+     <div class="card"> <div class="card-body">
+	     <menu></menu></div></div>
+    </div>
+  
+  </div>
+</div>
+	    
+	    
+	    
+	    
+        <!-- end of container -->
     </header> <!-- end of header -->
     <!-- end of header -->
 
