@@ -254,85 +254,10 @@ s.setAttribute('data-timestamp', +new Date());
   <div class="col-sm-4">
 	  
 	  <div class="card">
-  <div class="card-body">Templat M3<hr/>
-   <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h6 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><small>Keterangan</small></a>
-        </h6>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">
-	<p style="text-align:justify"><small>	
-		Templat HTML5 yang didasarkan pada Sass dan Bootstrap 4 dengan desain multiguna yang modern dan kreatif, Anda dapat menggunakannya sebagai startup, studio web dan agensi kreatif, musisi, arsitek, dll.     </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h6 class="panel-title">
-		<small>Fitur</small>
-        </h6>
-      </div>
-         <div class="panel-body"><small>
-		<ul style="list-style-type:circle;">
-  <li>
-Sepenuhnya Responsif</li>
-  <li>Kompatibilitas Browser</li>
-  <li> Dibangun dengan SASS</li>
-			<li>
-Berdasarkan Bootstrap 4</li>
-  <li>Mudah disesuaikan</li>
-  <li>Kode Valid W3c</li>
-			<li>Ikon Font</li>
-  <li>Kode Ramah Pengembang </li>
-  <li> Desain datar, modern, dan bersih</li>
-  
-</ul>  
-		</small>
-		</div>
-    
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h6class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><small>Dibangun Dengan </small></a>
-        </h6>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body"><small>
-		<ul style="list-style-type:circle;">
-  <li>Bootstrap 4, HTML / CSS, JS</li>
-  <li>Google Fonts, Font Awesome</li>
-  
-</ul>  
-		<h6 class="panel-title">
-		<small>Persyaratan</small>
-        </h6>
-		<ul style="list-style-type:circle;">
-  <li>Pengodean HTML / CSS dan keterampilan mengedit gambar</li>
- 
-</ul>  
-		</small>	
-		</div>
+		  <menu></menu>	
+	  </div>
       </div>	
-<hr/>	    <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/tiaweb/m3/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download ntkme/github-buttons on GitHub">Download</a>
-   <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/tiaweb/m3/fork" data-icon="octicon-repo-forked" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
-    	    <br/>
-
-<a href="https://tiaweb.github.io/m3" class="btn btn-primary btn-sm" role="button"><smal>Demo</small></a>
-	     
-
 </div>
-  </div> 
-</div></div>
-
-	 
-	  
-	  
-</div>
-</div></div>
 </header>
        
     <!-- end of header -->
@@ -426,5 +351,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script id="dsq-count-scr" src="//tiaweb.disqus.com/count.js" async></script>
 	<!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+	    
+	    <script>
+	    fetch("./header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
+fetch("https://tiaweb.github.io/docs/html/learn/menu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("menu").innerHTML = data;
+  });
+	    </script>
+	    
 	</body>
 </html>
