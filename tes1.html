@@ -1,28 +1,28 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+
+
+<!DOCTYPE html>
+<html lang="id">
 
 <head>
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="google-site-verification=cGvkgt2oWQ-3kCOOxGHIcygm-J2wZANsFM5Huuw7eeg">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Free 100% template web landing page Html,ReactJs,VueJs and AngularJs ">
+    <meta name="description" content="Tiaweb dibuat untuk mempelajari HTML dan CSS  sederhana untuk semua orang, pemula, desainer dan pengembang.">
     <meta name="google-site-verification" content="G3-7l_kYP77sUVyUvr21R7H8Xh_ciQyqZTOklsmecbY" />
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="Tiaweb" /> <!-- website name -->
 	<meta property="og:site" content="https://tiaweb.github.io" /> <!-- website link -->
-	<meta property="og:title" content="Free Template Download"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Free 100% template web landing page Html,ReactJs,VueJs and AngularJs" /> <!-- description shown in the actual an Ashared post -->
-	<meta property="og:image" content="https://tiaweb.github.io/img/menu.jpg " /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://tiaweb.github.io/menu" /> <!-- where do you want your post to link to -->
+	<meta property="og:title" content="HTML DASAR"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Tiaweb dibuat untuk mempelajari HTML dan CSS  sederhana untuk semua orang, pemula, desainer dan pengembang." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://tiaweb.github.io/img/html.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://tiaweb.github.io/html.html" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
     <!-- Webpage Title -->
-    <title>Free Template Download</title>
+    <title>HTML DASAR </title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
@@ -34,6 +34,7 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="images/favicon.ico">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164531041-1"></script>
@@ -52,12 +53,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-T29C6CP');</script>
 <!-- End Google Tag Manager -->
-
-
-   
+  <script>	  
+fetch("https://tiaweb.github.io/docs/html/learn/menu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("menu").innerHTML = data;
+  });
+	    </script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
-   
+  
+
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
             <!-- Text Logo - Use this if you don't have a graphic logo -->
@@ -120,120 +128,52 @@ https://t.me/tiaweb">Komunitas</a>
 
 
 
-
     <!-- Header -->
     <header class="header">
-        <div class="container">
-
-    <div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/evolo.png" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/template-evolo">Template Evolo</a></small>
+	    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+	    
+      <div class="image-container">
+                        <img class="img-fluid" src="images/header.svg" width="300" height="300" alt="alternative">
+                    
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/smash.png" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/template-smash">Template Smash lite</a></small>
-    
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/tivo.png" width="326" height="180" alt="Card image cap">
-
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/template-tivo">Template Tivo</a></small>
-    
-    </div>
-  </div>
-</div><br/>
-	    <!--par2-->
-		
-		<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/kobe.jpg" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/template-kobe">Template kobe E-book</a></small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/viso.jpg" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/template-viso">Template Viso</a></small>
-    
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/consult.jpg" width="326" height="180" alt="Card image cap">
-
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/template-consult">Template Consult</a></small>
-    
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
     </div>
   </div>
 </div>
-	<br/>	<!--step2-->
-		<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/m1.jpg" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/m1">Template M1</a></small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/m2.jpg" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/m2">Template M2</a></small>
-    
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/m3.jpg" width="326" height="180" alt="Card image cap">
 
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/m3">Template M3</a></small>
-    
+</div>
+	    
     </div>
-  </div>
-</div><br/>
-	    <!--par2-->
-		
-		<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/m4.jpg" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/m4">Template M4</a></small>
+    <div class="col-sm">
+     <div class="card"> <div class="card-body">
+	     <menu></menu></div></div>
     </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/m5.jpg" width="326" height="180" alt="Card image cap">
-    
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/m5">Template M5</a></small>
-    
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://tiaweb.github.io/img/m6.jpg" width="326" height="180" alt="Card image cap">
-
-    <div class="card-footer">
-      <small class="text-muted"><a href="https://tiaweb.github.io/docs/html/m6">Template M6</a></small>
-    
-    </div>
+  
   </div>
 </div>
-		
-		<!--akhir-->
-	    </div>
-  <!-- end of container -->
+	    
+	    
+	    
+	    
+        <!-- end of container -->
     </header> <!-- end of header -->
     <!-- end of header -->
 
@@ -272,7 +212,7 @@ Kami membuat Tiaweb mempunyai Visi dan Misi <a href="tentang-kami.html"><font co
                     <div class="footer-col fourth">
 
                         <!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://tiaweb.github.io/menu.html" data-a2a-title="Tiaweb">
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://tiaweb.github.io/html.html" data-a2a-title="Tiaweb">
 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 <a class="a2a_button_facebook"></a>
 <a class="a2a_button_twitter"></a>
@@ -306,11 +246,11 @@ a2a_config.locale = "id";
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
     
-<!-- Google Tag Manager (noscript) -->
+
+    <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T29C6CP"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    
     	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
@@ -326,9 +266,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 
 </html>
-
-
-
-
-
-
