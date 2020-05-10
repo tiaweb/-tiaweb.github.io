@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>Search Menu</h2>
+<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">jQuery</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Node.js</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Page Content</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+  </div>
+</div>
+<br/><br/>
+<pre style='color:#d1d1d1;background:#000000;'>&lt;style>
+body <span style='color:#b060b0; '>{</span>
+  font<span style='color:#d2cd86; '>-</span>family<span style='color:#d2cd86; '>:</span> Arial<span style='color:#d2cd86; '>,</span> Helvetica<span style='color:#d2cd86; '>,</span> sans<span style='color:#d2cd86; '>-</span>serif<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+* <span style='color:#b060b0; '>{</span>
+  box<span style='color:#d2cd86; '>-</span>sizing<span style='color:#d2cd86; '>:</span> border<span style='color:#d2cd86; '>-</span>box<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Create a column layout with Flexbox */</span>
+.row <span style='color:#b060b0; '>{</span>
+  display<span style='color:#d2cd86; '>:</span> flex<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Left column (menu) */</span>
+.left <span style='color:#b060b0; '>{</span>
+  flex<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>35</span><span style='color:#d2cd86; '>%</span><span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 15px <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.left h2 <span style='color:#b060b0; '>{</span>
+  padding<span style='color:#d2cd86; '>-</span>left<span style='color:#d2cd86; '>:</span> 8px<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Right column (page content) */</span>
+.right <span style='color:#b060b0; '>{</span>
+  flex<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>65</span><span style='color:#d2cd86; '>%</span><span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 15px<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Style the search box */</span>
+#mySearch <span style='color:#b060b0; '>{</span>
+  width<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>100</span><span style='color:#d2cd86; '>%</span><span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>size<span style='color:#d2cd86; '>:</span> 18px<span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 11px<span style='color:#b060b0; '>;</span>
+  border<span style='color:#d2cd86; '>:</span> 1px solid <span style='color:#d2cd86; '>#</span>ddd<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Style the navigation menu inside the left column */</span>
+#myMenu <span style='color:#b060b0; '>{</span>
+  list<span style='color:#d2cd86; '>-</span>style<span style='color:#d2cd86; '>-</span>type<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+  margin<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+#myMenu li a <span style='color:#b060b0; '>{</span>
+  padding<span style='color:#d2cd86; '>:</span> 12px<span style='color:#b060b0; '>;</span>
+  text<span style='color:#d2cd86; '>-</span>decoration<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  color<span style='color:#d2cd86; '>:</span> black<span style='color:#b060b0; '>;</span>
+  display<span style='color:#d2cd86; '>:</span> block
+<span style='color:#b060b0; '>}</span>
+
+#myMenu li a:hover <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>eee<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+&lt;/style>
+
+&lt;div class="row">
+  &lt;div class="left" style="background-color:#bbb<span style='color:#d2cd86; '>;</span>">
+    &lt;h2>Menu&lt;/h2>
+    &lt;input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    &lt;ul id="myMenu">
+      &lt;li>&lt;a href="#">HTML&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">CSS&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">JavaScript&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">PHP&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Python&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">jQuery&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">SQL&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Bootstrap&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Node.js&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  
+  &lt;div class="right" style="background-color:#ddd<span style='color:#d2cd86; '>;</span>">
+    &lt;h2>Page Content&lt;/h2>
+    &lt;p>Start to type for a specific category inside the search bar to "filter" the search options.&lt;/p>
+    &lt;p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..&lt;/p>
+    &lt;p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..&lt;/p>
+    &lt;p>Some text..&lt;/p>
+  &lt;/div>
+&lt;/div>
+
+&lt;script>
+function myFunction() <span style='color:#b060b0; '>{</span>
+  var input<span style='color:#d2cd86; '>,</span> filter<span style='color:#d2cd86; '>,</span> ul<span style='color:#d2cd86; '>,</span> li<span style='color:#d2cd86; '>,</span> a<span style='color:#d2cd86; '>,</span> i<span style='color:#b060b0; '>;</span>
+  input <span style='color:#d2cd86; '>=</span> document<span style='color:#d2cd86; '>.</span>getElementById<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"mySearch"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  filter <span style='color:#d2cd86; '>=</span> input<span style='color:#d2cd86; '>.</span>value<span style='color:#d2cd86; '>.</span>toUpperCase<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  ul <span style='color:#d2cd86; '>=</span> document<span style='color:#d2cd86; '>.</span>getElementById<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"myMenu"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  li <span style='color:#d2cd86; '>=</span> ul<span style='color:#d2cd86; '>.</span>getElementsByTagName<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"li"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#e66170; font-weight:bold; '>for</span> <span style='color:#d2cd86; '>(</span>i <span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span> i <span style='color:#d2cd86; '>&lt;</span> li<span style='color:#d2cd86; '>.</span>length<span style='color:#b060b0; '>;</span> i<span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    a <span style='color:#d2cd86; '>=</span> li<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>getElementsByTagName<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"a"</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>[</span><span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>]</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#e66170; font-weight:bold; '>if</span> <span style='color:#d2cd86; '>(</span>a<span style='color:#d2cd86; '>.</span>innerHTML<span style='color:#d2cd86; '>.</span>toUpperCase<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>indexOf<span style='color:#d2cd86; '>(</span>filter<span style='color:#d2cd86; '>)</span> <span style='color:#d2cd86; '>></span> <span style='color:#d2cd86; '>-</span><span style='color:#008c00; '>1</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+      li<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>display <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>""</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span> <span style='color:#e66170; font-weight:bold; '>else</span> <span style='color:#b060b0; '>{</span>
+      li<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>display <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"none"</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span>
+  <span style='color:#b060b0; '>}</span>
+<span style='color:#b060b0; '>}</span>
+&lt;/script>
+
+
+</pre>
+<!--Created using ToHtml.com on 2020-05-10 08:09:26 UTC -->
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
