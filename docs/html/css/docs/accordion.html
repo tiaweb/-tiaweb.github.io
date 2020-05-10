@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+</style>
+
+<style>
+.tiaweb-accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .tiaweb-accordion:hover {
+  background-color: #ccc;
+}
+
+.tiaweb-accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<h2>tiaweb-accordion with symbols</h2>
+<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
+<button class="tiaweb-accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="tiaweb-accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="tiaweb-accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<pre style='color:#d1d1d1;background:#000000;'>&lt;style>
+.tiaweb-accordion <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>eee<span style='color:#b060b0; '>;</span>
+  color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span><span style='color:#008c00; '>444</span><span style='color:#b060b0; '>;</span>
+  cursor<span style='color:#d2cd86; '>:</span> pointer<span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 18px<span style='color:#b060b0; '>;</span>
+  width<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>100</span><span style='color:#d2cd86; '>%</span><span style='color:#b060b0; '>;</span>
+  border<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  text<span style='color:#d2cd86; '>-</span>align<span style='color:#d2cd86; '>:</span> left<span style='color:#b060b0; '>;</span>
+  outline<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>size<span style='color:#d2cd86; '>:</span> 15px<span style='color:#b060b0; '>;</span>
+  transition<span style='color:#d2cd86; '>:</span> <span style='color:#009f00; '>0.</span>4s<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.active, .tiaweb-accordion:hover <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>ccc<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.tiaweb-accordion:after <span style='color:#b060b0; '>{</span>
+  content<span style='color:#d2cd86; '>:</span> <span style='color:#00c4c4; '>'\002B'</span><span style='color:#b060b0; '>;</span>
+  color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span><span style='color:#008c00; '>777</span><span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>weight<span style='color:#d2cd86; '>:</span> bold<span style='color:#b060b0; '>;</span>
+  <span style='color:#bb7977; '>float</span><span style='color:#d2cd86; '>:</span> right<span style='color:#b060b0; '>;</span>
+  margin<span style='color:#d2cd86; '>-</span>left<span style='color:#d2cd86; '>:</span> 5px<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.active:after <span style='color:#b060b0; '>{</span>
+  content<span style='color:#d2cd86; '>:</span> <span style='color:#00c4c4; '>"</span><span style='color:#008080; '>\2212</span><span style='color:#00c4c4; '>"</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.panel <span style='color:#b060b0; '>{</span>
+  padding<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>0</span> 18px<span style='color:#b060b0; '>;</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> white<span style='color:#b060b0; '>;</span>
+  max<span style='color:#d2cd86; '>-</span>height<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span>
+  overflow<span style='color:#d2cd86; '>:</span> hidden<span style='color:#b060b0; '>;</span>
+  transition<span style='color:#d2cd86; '>:</span> max<span style='color:#d2cd86; '>-</span>height <span style='color:#009f00; '>0.</span>2s ease<span style='color:#d2cd86; '>-</span>out<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+&lt;/style>
+
+
+&lt;button class="tiaweb-accordion">Section 1&lt;/button>
+&lt;div class="panel">
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>
+&lt;/div>
+
+&lt;button class="tiaweb-accordion">Section 2&lt;/button>
+&lt;div class="panel">
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>
+&lt;/div>
+
+&lt;button class="tiaweb-accordion">Section 3&lt;/button>
+&lt;div class="panel">
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>
+&lt;/div>
+
+&lt;script>
+var acc = document.getElementsByClassName("tiaweb-accordion")<span style='color:#d2cd86; '>;</span>
+var i<span style='color:#d2cd86; '>;</span>
+
+for (i = 0<span style='color:#d2cd86; '>;</span> i &lt; acc.length<span style='color:#d2cd86; '>;</span> i++) <span style='color:#b060b0; '>{</span>
+  acc<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>addEventListener<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"click"</span><span style='color:#d2cd86; '>,</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>.</span>classList<span style='color:#d2cd86; '>.</span>toggle<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"active"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    var panel <span style='color:#d2cd86; '>=</span> <span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>.</span>nextElementSibling<span style='color:#b060b0; '>;</span>
+    <span style='color:#e66170; font-weight:bold; '>if</span> <span style='color:#d2cd86; '>(</span>panel<span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>maxHeight<span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+      panel<span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>maxHeight <span style='color:#d2cd86; '>=</span> <span style='color:#e66170; font-weight:bold; '>null</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span> <span style='color:#e66170; font-weight:bold; '>else</span> <span style='color:#b060b0; '>{</span>
+      panel<span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>maxHeight <span style='color:#d2cd86; '>=</span> panel<span style='color:#d2cd86; '>.</span>scrollHeight <span style='color:#d2cd86; '>+</span> <span style='color:#00c4c4; '>"px"</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span> 
+  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+&lt;/script>
+
+</pre>
+<!--Created using ToHtml.com on 2020-05-10 06:56:06 UTC -->
+<script>
+var acc = document.getElementsByClassName("tiaweb-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
