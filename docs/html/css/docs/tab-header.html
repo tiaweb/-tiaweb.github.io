@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+</style>
+
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tiaweblink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tiaweblink:hover {
+  background-color: #777;
+}
+
+/* Style the tiaweb content */
+.tiawebcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+</style>
+</head>
+<body>
+
+<p>Click on the buttons inside the tiawebbed menu:</p>
+
+<div id="London" class="tiawebcontent">
+  <h1>London</h1>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tiawebcontent">
+  <h1>Paris</h1>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tiawebcontent">
+  <h1>Tokyo</h1>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Oslo" class="tiawebcontent">
+  <h1>Oslo</h1>
+  <p>Oslo is the capital of Norway.</p>
+</div>
+
+<button class="tiaweblink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+<button class="tiaweblink" onclick="openCity('Paris', this, 'green')">Paris</button>
+<button class="tiaweblink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+<button class="tiaweblink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+<pre style='color:#d1d1d1;background:#000000;'>&lt;style>
+body <span style='color:#b060b0; '>{</span>font<span style='color:#d2cd86; '>-</span>family<span style='color:#d2cd86; '>:</span> <span style='color:#00c4c4; '>"Lato"</span><span style='color:#d2cd86; '>,</span> sans<span style='color:#d2cd86; '>-</span>serif<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+
+.tiaweblink <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span><span style='color:#008c00; '>555</span><span style='color:#b060b0; '>;</span>
+  color<span style='color:#d2cd86; '>:</span> white<span style='color:#b060b0; '>;</span>
+  <span style='color:#bb7977; '>float</span><span style='color:#d2cd86; '>:</span> left<span style='color:#b060b0; '>;</span>
+  border<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  outline<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  cursor<span style='color:#d2cd86; '>:</span> pointer<span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 14px 16px<span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>size<span style='color:#d2cd86; '>:</span> 17px<span style='color:#b060b0; '>;</span>
+  width<span style='color:#d2cd86; '>:</span> <span style='color:#008c00; '>25</span><span style='color:#d2cd86; '>%</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.tiaweblink:hover <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span><span style='color:#008c00; '>777</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Style the tiaweb content */</span>
+.tiawebcontent <span style='color:#b060b0; '>{</span>
+  color<span style='color:#d2cd86; '>:</span> white<span style='color:#b060b0; '>;</span>
+  display<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 50px<span style='color:#b060b0; '>;</span>
+  text<span style='color:#d2cd86; '>-</span>align<span style='color:#d2cd86; '>:</span> center<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+#London <span style='color:#b060b0; '>{</span>background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span>red<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+#Paris <span style='color:#b060b0; '>{</span>background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span>green<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+#Tokyo <span style='color:#b060b0; '>{</span>background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span>blue<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+#Oslo <span style='color:#b060b0; '>{</span>background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span>orange<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+&lt;/style>
+
+&lt;div id="London" class="tiawebcontent">
+  &lt;h1>London&lt;/h1>
+  &lt;p>London is the capital city of England.&lt;/p>
+&lt;/div>
+
+&lt;div id="Paris" class="tiawebcontent">
+  &lt;h1>Paris&lt;/h1>
+  &lt;p>Paris is the capital of France.&lt;/p> 
+&lt;/div>
+
+&lt;div id="Tokyo" class="tiawebcontent">
+  &lt;h1>Tokyo&lt;/h1>
+  &lt;p>Tokyo is the capital of Japan.&lt;/p>
+&lt;/div>
+
+&lt;div id="Oslo" class="tiawebcontent">
+  &lt;h1>Oslo&lt;/h1>
+  &lt;p>Oslo is the capital of Norway.&lt;/p>
+&lt;/div>
+
+&lt;button class="tiaweblink" onclick="openCity('London', this, 'red')" id="defaultOpen">London&lt;/button>
+&lt;button class="tiaweblink" onclick="openCity('Paris', this, 'green')">Paris&lt;/button>
+&lt;button class="tiaweblink" onclick="openCity('Tokyo', this, 'blue')">Tokyo&lt;/button>
+&lt;button class="tiaweblink" onclick="openCity('Oslo', this, 'orange')">Oslo&lt;/button>
+
+&lt;script>
+function openCity(cityName,elmnt,color) <span style='color:#b060b0; '>{</span>
+  var i<span style='color:#d2cd86; '>,</span> tiawebcontent<span style='color:#d2cd86; '>,</span> tiaweblinks<span style='color:#b060b0; '>;</span>
+  tiawebcontent <span style='color:#d2cd86; '>=</span> document<span style='color:#d2cd86; '>.</span>getElementsByClassName<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"tiawebcontent"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#e66170; font-weight:bold; '>for</span> <span style='color:#d2cd86; '>(</span>i <span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span> i <span style='color:#d2cd86; '>&lt;</span> tiawebcontent<span style='color:#d2cd86; '>.</span>length<span style='color:#b060b0; '>;</span> i<span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    tiawebcontent<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>display <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"none"</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#b060b0; '>}</span>
+  tiaweblinks <span style='color:#d2cd86; '>=</span> document<span style='color:#d2cd86; '>.</span>getElementsByClassName<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"tiaweblink"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#e66170; font-weight:bold; '>for</span> <span style='color:#d2cd86; '>(</span>i <span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span> i <span style='color:#d2cd86; '>&lt;</span> tiaweblinks<span style='color:#d2cd86; '>.</span>length<span style='color:#b060b0; '>;</span> i<span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    tiaweblinks<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>backgroundColor <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>""</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#b060b0; '>}</span>
+  document<span style='color:#d2cd86; '>.</span>getElementById<span style='color:#d2cd86; '>(</span>cityName<span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>display <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"block"</span><span style='color:#b060b0; '>;</span>
+  elmnt<span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>backgroundColor <span style='color:#d2cd86; '>=</span> color<span style='color:#b060b0; '>;</span>
+
+<span style='color:#b060b0; '>}</span>
+<span style='color:#9999a9; '>// Get the element with id="defaultOpen" and click on it</span>
+document.getElementById("defaultOpen").click()<span style='color:#d2cd86; '>;</span>
+&lt;/script>
+   
+ 
+</pre>
+<!--Created using ToHtml.com on 2020-05-10 07:29:28 UTC -->
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tiawebcontent, tiaweblinks;
+  tiawebcontent = document.getElementsByClassName("tiawebcontent");
+  for (i = 0; i < tiawebcontent.length; i++) {
+    tiawebcontent[i].style.display = "none";
+  }
+  tiaweblinks = document.getElementsByClassName("tiaweblink");
+  for (i = 0; i < tiaweblinks.length; i++) {
+    tiaweblinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
