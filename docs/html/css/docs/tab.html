@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+</style>
+<style>
+body {font-family: Arial;}
+
+/* Style the tiawebtab */
+.tiawebtab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tiawebtab */
+.tiawebtab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tiawebtab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tiawebtablink class */
+.tiawebtab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tiawebtab content */
+.tiawebtabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+</style>
+</head>
+<body>
+
+<h2>tiawebtabs</h2>
+<p>Click on the x button in the top right corner to close the current tiawebtab:</p>
+
+<div class="tiawebtab">
+  <button class="tiawebtablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+  <button class="tiawebtablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tiawebtablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tiawebtabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tiawebtabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tiawebtabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<pre style='color:#d1d1d1;background:#000000;'>&lt;style>
+body <span style='color:#b060b0; '>{</span>font<span style='color:#d2cd86; '>-</span>family<span style='color:#d2cd86; '>:</span> Arial<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Style the tiawebtab */</span>
+.tiawebtab <span style='color:#b060b0; '>{</span>
+  overflow<span style='color:#d2cd86; '>:</span> hidden<span style='color:#b060b0; '>;</span>
+  border<span style='color:#d2cd86; '>:</span> 1px solid <span style='color:#d2cd86; '>#</span>ccc<span style='color:#b060b0; '>;</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>f1f1f1<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Style the buttons inside the tiawebtab */</span>
+.tiawebtab button <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> inherit<span style='color:#b060b0; '>;</span>
+  <span style='color:#bb7977; '>float</span><span style='color:#d2cd86; '>:</span> left<span style='color:#b060b0; '>;</span>
+  border<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  outline<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  cursor<span style='color:#d2cd86; '>:</span> pointer<span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 14px 16px<span style='color:#b060b0; '>;</span>
+  transition<span style='color:#d2cd86; '>:</span> <span style='color:#009f00; '>0.</span>3s<span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>size<span style='color:#d2cd86; '>:</span> 17px<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Change background color of buttons on hover */</span>
+.tiawebtab button:hover <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>ddd<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Create an active/current tiawebtablink class */</span>
+.tiawebtab button.active <span style='color:#b060b0; '>{</span>
+  background<span style='color:#d2cd86; '>-</span>color<span style='color:#d2cd86; '>:</span> <span style='color:#d2cd86; '>#</span>ccc<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Style the tiawebtab content */</span>
+.tiawebtabcontent <span style='color:#b060b0; '>{</span>
+  display<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+  padding<span style='color:#d2cd86; '>:</span> 6px 12px<span style='color:#b060b0; '>;</span>
+  border<span style='color:#d2cd86; '>:</span> 1px solid <span style='color:#d2cd86; '>#</span>ccc<span style='color:#b060b0; '>;</span>
+  border<span style='color:#d2cd86; '>-</span>top<span style='color:#d2cd86; '>:</span> none<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>/* Style the close button */</span>
+.topright <span style='color:#b060b0; '>{</span>
+  <span style='color:#bb7977; '>float</span><span style='color:#d2cd86; '>:</span> right<span style='color:#b060b0; '>;</span>
+  cursor<span style='color:#d2cd86; '>:</span> pointer<span style='color:#b060b0; '>;</span>
+  font<span style='color:#d2cd86; '>-</span>size<span style='color:#d2cd86; '>:</span> 28px<span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+.topright:hover <span style='color:#b060b0; '>{</span>color<span style='color:#d2cd86; '>:</span> red<span style='color:#b060b0; '>;</span><span style='color:#b060b0; '>}</span>
+&lt;/style>
+
+&lt;div class="tiawebtab">
+  &lt;button class="tiawebtablinks" onclick="openCity(event, 'London')" id="defaultOpen">London&lt;/button>
+  &lt;button class="tiawebtablinks" onclick="openCity(event, 'Paris')">Paris&lt;/button>
+  &lt;button class="tiawebtablinks" onclick="openCity(event, 'Tokyo')">Tokyo&lt;/button>
+&lt;/div>
+
+&lt;div id="London" class="tiawebtabcontent">
+  &lt;span onclick="this.parentElement.style.display='none'" class="topright">&amp;times&lt;/span>
+  &lt;h3>London&lt;/h3>
+  &lt;p>London is the capital city of England.&lt;/p>
+&lt;/div>
+
+&lt;div id="Paris" class="tiawebtabcontent">
+  &lt;span onclick="this.parentElement.style.display='none'" class="topright">&amp;times&lt;/span>
+  &lt;h3>Paris&lt;/h3>
+  &lt;p>Paris is the capital of France.&lt;/p> 
+&lt;/div>
+
+&lt;div id="Tokyo" class="tiawebtabcontent">
+  &lt;span onclick="this.parentElement.style.display='none'" class="topright">&amp;times&lt;/span>
+  &lt;h3>Tokyo&lt;/h3>
+  &lt;p>Tokyo is the capital of Japan.&lt;/p>
+&lt;/div>
+
+&lt;script>
+function openCity(evt, cityName) <span style='color:#b060b0; '>{</span>
+  var i<span style='color:#d2cd86; '>,</span> tiawebtabcontent<span style='color:#d2cd86; '>,</span> tiawebtablinks<span style='color:#b060b0; '>;</span>
+  tiawebtabcontent <span style='color:#d2cd86; '>=</span> document<span style='color:#d2cd86; '>.</span>getElementsByClassName<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"tiawebtabcontent"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#e66170; font-weight:bold; '>for</span> <span style='color:#d2cd86; '>(</span>i <span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span> i <span style='color:#d2cd86; '>&lt;</span> tiawebtabcontent<span style='color:#d2cd86; '>.</span>length<span style='color:#b060b0; '>;</span> i<span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    tiawebtabcontent<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>display <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"none"</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#b060b0; '>}</span>
+  tiawebtablinks <span style='color:#d2cd86; '>=</span> document<span style='color:#d2cd86; '>.</span>getElementsByClassName<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"tiawebtablinks"</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#e66170; font-weight:bold; '>for</span> <span style='color:#d2cd86; '>(</span>i <span style='color:#d2cd86; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#b060b0; '>;</span> i <span style='color:#d2cd86; '>&lt;</span> tiawebtablinks<span style='color:#d2cd86; '>.</span>length<span style='color:#b060b0; '>;</span> i<span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    tiawebtablinks<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>className <span style='color:#d2cd86; '>=</span> tiawebtablinks<span style='color:#d2cd86; '>[</span>i<span style='color:#d2cd86; '>]</span><span style='color:#d2cd86; '>.</span>className<span style='color:#d2cd86; '>.</span>replace<span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>" active"</span><span style='color:#d2cd86; '>,</span> <span style='color:#00c4c4; '>""</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#b060b0; '>}</span>
+  document<span style='color:#d2cd86; '>.</span>getElementById<span style='color:#d2cd86; '>(</span>cityName<span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>style<span style='color:#d2cd86; '>.</span>display <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"block"</span><span style='color:#b060b0; '>;</span>
+  evt<span style='color:#d2cd86; '>.</span>currentTarget<span style='color:#d2cd86; '>.</span>className <span style='color:#d2cd86; '>+</span><span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>" active"</span><span style='color:#b060b0; '>;</span>
+<span style='color:#b060b0; '>}</span>
+
+<span style='color:#9999a9; '>// Get the element with id="defaultOpen" and click on it</span>
+document.getElementById("defaultOpen").click()<span style='color:#d2cd86; '>;</span>
+&lt;/script>
+   
+
+</pre>
+<!--Created using ToHtml.com on 2020-05-10 07:13:20 UTC -->
+<script>
+function openCity(evt, cityName) {
+  var i, tiawebtabcontent, tiawebtablinks;
+  tiawebtabcontent = document.getElementsByClassName("tiawebtabcontent");
+  for (i = 0; i < tiawebtabcontent.length; i++) {
+    tiawebtabcontent[i].style.display = "none";
+  }
+  tiawebtablinks = document.getElementsByClassName("tiawebtablinks");
+  for (i = 0; i < tiawebtablinks.length; i++) {
+    tiawebtablinks[i].className = tiawebtablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
