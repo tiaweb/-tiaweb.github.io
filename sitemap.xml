@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://tiaweb.github.io/</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/index.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/menu.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/html.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/vuejs.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/reactjs.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/angularjs.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/tentang-kami.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/template-evolo</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/template-smash</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/template-tivo</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/template-kobe</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/template-viso</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/template-consult</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/m1</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/m2</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/m3</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/m4</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/m5</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/html/m6</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/vue/vue1.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/vue/vuet2.html</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/react/r1</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/docs/react/r2</loc>
+  <lastmod>2020-05-13T02:34:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/evolo-template/</loc>
+  <lastmod>2020-04-23T12:25:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-smashlite/</loc>
+  <lastmod>2020-04-24T14:26:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-tivo/</loc>
+  <lastmod>2020-04-23T12:48:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/kobe-template/</loc>
+  <lastmod>2020-04-25T15:31:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/landinpage-consult/</loc>
+  <lastmod>2020-04-23T03:20:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m1/</loc>
+  <lastmod>2020-04-28T23:58:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m2/</loc>
+  <lastmod>2020-04-29T00:02:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m3/</loc>
+  <lastmod>2020-04-29T00:05:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m4/</loc>
+  <lastmod>2020-04-29T00:07:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m5/</loc>
+  <lastmod>2020-04-29T00:08:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m6/</loc>
+  <lastmod>2020-04-29T00:10:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/evolo-template/index.html</loc>
+  <lastmod>2020-04-23T12:25:28+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/evolo-template/terms-conditions.html</loc>
+  <lastmod>2020-04-23T12:25:28+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/evolo-template/privacy-policy.html</loc>
+  <lastmod>2020-04-23T12:25:28+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-smashlite/index.html</loc>
+  <lastmod>2020-04-24T14:26:19+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-tivo/index.html</loc>
+  <lastmod>2020-04-23T12:48:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-tivo/article-details.html</loc>
+  <lastmod>2020-04-23T12:48:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-tivo/terms-conditions.html</loc>
+  <lastmod>2020-04-23T12:48:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-tivo/privacy-policy.html</loc>
+  <lastmod>2020-04-23T12:48:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-tivo/log-in.html</loc>
+  <lastmod>2020-04-23T12:48:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/template-tivo/sign-up.html</loc>
+  <lastmod>2020-04-23T12:48:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/kobe-template/index.html</loc>
+  <lastmod>2020-04-25T15:31:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/kobe-template/details.html</loc>
+  <lastmod>2020-04-25T15:31:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/kobe-template/terms.html</loc>
+  <lastmod>2020-04-25T15:31:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/kobe-template/privacy.html</loc>
+  <lastmod>2020-04-25T15:31:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/kobe-template/contact.html</loc>
+  <lastmod>2020-04-25T15:31:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/index.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/services.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/pricing.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/about.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/job-details.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/article.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/terms.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/privacy.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/contact.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/viso-template/service.html</loc>
+  <lastmod>2020-04-23T03:20:23+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/landinpage-consult/index.html</loc>
+  <lastmod>2020-04-23T03:20:13+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m1/index.html</loc>
+  <lastmod>2020-04-28T23:58:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m1/404.html</loc>
+  <lastmod>2020-04-28T23:58:30+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m2/index.html</loc>
+  <lastmod>2020-04-29T00:02:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m2/404.html</loc>
+  <lastmod>2020-04-29T00:02:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m3/index.html</loc>
+  <lastmod>2020-04-29T00:05:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m3/404.html</loc>
+  <lastmod>2020-04-29T00:05:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m4/index.html</loc>
+  <lastmod>2020-04-29T00:07:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m4/404.html</loc>
+  <lastmod>2020-04-29T00:07:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m5/index.html</loc>
+  <lastmod>2020-04-29T00:08:53+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m5/404.html</loc>
+  <lastmod>2020-04-29T00:08:53+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m6/index.html</loc>
+  <lastmod>2020-04-29T00:10:07+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://tiaweb.github.io/m6/404.html</loc>
+  <lastmod>2020-04-29T00:10:07+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
