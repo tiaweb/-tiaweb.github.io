@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
- pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  text-align: left;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
 
-</style>
-  
-  <style>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Header</title>
+	 <link href="https://tiaweb.github.io/css/grid.css" rel="stylesheet">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Tiaweb<span>Css</span></a></h1>
+<atas></atas>
+		
+
+	</div>
+
+</header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+
+<!-- The content of your page would go here. -->
+
+<style>
 .tiaweb-alert {
   padding: 20px;
   background-color: #f44336;
@@ -44,11 +63,9 @@ table {
   color: black;
 }
 </style>
-</head>
-<body>
-
-<h2>tiaweb-alert Messages</h2>
-<p>Click on the "x" symbol to close the tiaweb-alert message.</p>
+<br/><br/><div class="container">
+<div class="row">
+  <div class="col-sm-8">
 <div class="tiaweb-alert">
   <span class="closebtn">&times;</span>  
   <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
@@ -67,9 +84,9 @@ table {
 <div class="tiaweb-alert warning">
   <span class="closebtn">&times;</span>  
   <strong>Warning!</strong> Indicates a warning that might need attention.
-</div>
-<br/>
-  <pre style='color:#d1d1d1;background:#000000;'>
+	  </div>
+      <!--kode-->
+   <pre style='color:#d1d1d1;background:#000000;'>
 &lt;style>
 .tiaweb-alert <span style='color:#b060b0; '>{</span>
   padding<span style='color:#d2cd86; '>:</span> 20px<span style='color:#b060b0; '>;</span>
@@ -137,8 +154,10 @@ for (i = 0<span style='color:#d2cd86; '>;</span> i &lt; close.length<span style=
 
 
 </pre>
-<!--Created using ToHtml.com on 2020-05-10 06:26:34 UTC -->
-  
+	  </div>
+  <div class="col-sm-4"><menu></menu></div>
+</div></div>
+<footerku></footerku>
 <script>
 var close = document.getElementsByClassName("closebtn");
 var i;
@@ -152,5 +171,77 @@ for (i = 0; i < close.length; i++) {
 }
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 400){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+
+
+<!-- Demo ads. Please ignore and remove. -->
+<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+<script>
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/menu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("menu").innerHTML = data;
+  });
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/footer")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footerku").innerHTML = data;
+  });
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/atas")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("atas").innerHTML = data;
+  });
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/komen")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("komen").innerHTML = data;
+  });
+</script>
+
 </body>
+
 </html>
