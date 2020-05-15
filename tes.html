@@ -8,34 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Basic Header</title>
-
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 900%;
-  border-radius: 5px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-.container {
-  padding: 2px 16px;
-}
-</style>
-</head>
-
-
-
-
-
-
+	 <link href="https://tiaweb.github.io/css/grid.css" rel="stylesheet">
 
 <style>
 .header-fixed {
@@ -240,10 +213,8 @@ body {
 }
 </style>
 <br/><br/>
-<div class="card">
-   <div class="container">
-    
-
+<div class="row">
+  <div class="col-sm-8">
 <div class="tiaweb-alert">
   <span class="closebtn">&times;</span>  
   <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
@@ -262,7 +233,10 @@ body {
 <div class="tiaweb-alert warning">
   <span class="closebtn">&times;</span>  
   <strong>Warning!</strong> Indicates a warning that might need attention.
-</div></div></div>
+	  </div>
+	  </div>
+  <div class="col-sm-4">col-sm-4</div>
+</div>
 
 <script>
 var close = document.getElementsByClassName("closebtn");
