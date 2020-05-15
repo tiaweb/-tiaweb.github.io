@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Tiaweb opensource Css template web html,vuejs,reactjs and angularjs 100% Free... ">
+    
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Tiaweb" /> <!-- website name -->
+	<meta property="og:site" content="https://tiaweb.github.io" /> <!-- website link -->
+	<meta property="og:title" content="Css Opensource-Tiaweb"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Tiaweb Open source Css template web html,vuejs,reactjs and angularjs 100% Free..." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://tiaweb.github.io/img/opensource.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://tiaweb.github.io/docs/html/css/docs" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Webpage Title -->
+    <title> Css Opensource-Tiaweb</title>
+	 <link href="https://tiaweb.github.io/css/grid.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="https://tiaweb.github.io/images/favicon.ico">
+	<link rel="icon" href="https://tiaweb.github.io/images/favicon.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164531041-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164531041-1');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T29C6CP');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Tiaweb<span>Css</span></a></h1>  
+<atas></atas>
+		
+
+	</div>
+
+</header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+
+<!-- The content of your page would go here. -->
+
+
+<br/><br/><div class="container">
+<div class="row">
+  <div class="col-sm-8">
+Contoh
+
+
+	  </div>
+  <div class="col-sm-4"><menu></menu></div>
+</div></div>
+<footerku></footerku>
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 400){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+
+
+<!-- Demo ads. Please ignore and remove. -->
+<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+<script>
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/menu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("menu").innerHTML = data;
+  });
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/footer")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footerku").innerHTML = data;
+  });
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/atas")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("atas").innerHTML = data;
+  });
+  
+  fetch("https://tiaweb.github.io/docs/html/css/docs/komen")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("komen").innerHTML = data;
+  });
+</script>
+
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T29C6CP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> 
+
+</body>
+
+</html>
