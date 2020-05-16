@@ -1,302 +1,266 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification=cGvkgt2oWQ-3kCOOxGHIcygm-J2wZANsFM5Huuw7eeg">
 
-	<title>Basic Header</title>
-	 <link href="https://tiaweb.github.io/css/grid.css" rel="stylesheet">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Viso landing page HTML template is based on Bootstrap and it's designed for recruiting agencies to display job listings and gather CV applications through the included form.">
+    <meta name="google-site-verification" content="G3-7l_kYP77sUVyUvr21R7H8Xh_ciQyqZTOklsmecbY" />
 
-<style>
-.header-fixed {
-	background-color:#292c2f;
-	box-shadow:0 1px 1px #ccc;
-	padding: 20px 40px;
-	height: 80px;
-	color: #ffffff;
-	box-sizing: border-box;
-	top:-100px;
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Tiaweb"/> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-	-webkit-transition:top 0.3s;
-	transition:top 0.3s;
-}
+    <!-- Webpage Title -->
+    <title>Viso - Recruiting Agency Landing Page HTML Template</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164531041-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-.header-fixed .header-limiter {
-	max-width: 1200px;
-	text-align: center;
-	margin: 0 auto;
-}
+  gtag('config', 'UA-164531041-1');
+</script>
 
-/*	The header placeholder. It is displayed when the header is fixed to the top of the
-	browser window, in order to prevent the content of the page from jumping up. */
-
-.header-fixed-placeholder{
-	height: 80px;
-	display: none;
-}
-
-/* Logo */
-
-.header-fixed .header-limiter h1 {
-	float: left;
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
-	line-height: 40px;
-	margin: 0;
-}
-
-.header-fixed .header-limiter h1 span {
-	color: #5383d3;
-}
-
-/* The navigation links */
-
-.header-fixed .header-limiter a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.header-fixed .header-limiter nav {
-	font:16px Arial, Helvetica, sans-serif;
-	line-height: 40px;
-	float: right;
-}
-
-.header-fixed .header-limiter nav a{
-	display: inline-block;
-	padding: 0 5px;
-	text-decoration:none;
-	color: #ffffff;
-	opacity: 0.9;
-}
-
-.header-fixed .header-limiter nav a:hover{
-	opacity: 1;
-}
-
-.header-fixed .header-limiter nav a.selected {
-	color: #608bd2;
-	pointer-events: none;
-	opacity: 1;
-}
-
-/* Fixed version of the header */
-
-body.fixed .header-fixed {
-	padding: 10px 40px;
-	height: 50px;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-
-body.fixed .header-fixed-placeholder {
-	display: block;
-}
-
-body.fixed .header-fixed .header-limiter h1 {
-	font-size: 24px;
-	line-height: 30px;
-}
-
-body.fixed .header-fixed .header-limiter nav {
-	line-height: 28px;
-	font-size: 13px;
-}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T29C6CP');</script>
+<!-- End Google Tag Manager -->
 
 
-/* Making the header responsive */
 
-@media all and (max-width: 600px) {
-
-	.header-fixed {
-		padding: 20px 0;
-		height: 75px;
-	}
-
-	.header-fixed .header-limiter h1 {
-		float: none;
-		margin: -8px 0 10px;
-		text-align: center;
-		font-size: 24px;
-		line-height: 1;
-	}
-
-	.header-fixed .header-limiter nav {
-		line-height: 1;
-		float:none;
-	}
-
-	.header-fixed .header-limiter nav a {
-		font-size: 13px;
-	}
-
-	body.fixed .header-fixed {
-		display: none;
-	}
-
-}
-
-/*
-	 We are clearing the body's margin and padding, so that the header fits properly.
-	 We are also adding a height to demonstrate the scrolling behavior. You can remove
-	 these styles.
- */
-
-body {
-	margin: 0;
-	padding: 0;
-	height: 1500px;
-}
-</style>
-	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 
 </head>
+<body data-spy="scroll" data-target=".fixed-top">
+   
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Viso</a> -->
 
-<body>
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
 
-<header class="header-fixed">
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu<span class="sr-only">(current)</span></a>
+                    </li>
+                    
 
-	<div class="header-limiter">
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html"> Html</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="vuejs.html"> Vue js</a>
+                    </li>
+                    
+<li class="nav-item">
+                        <a class="nav-link" href="reactjs.html">React js</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="angularjs.html"> Angular js</a>
+                    </li>
+<li class="nav-item">
+                        <a class="nav-link" href="
+https://t.me/tiaweb">Komunitas</a>
+                    </li>
 
-		<h1><a href="#">Tiaweb<span>Css</span></a></h1>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="https://facebook.com/tiashop.tiashop.376">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.instagram.com/tiaaweb">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-		<nav>
-			<a href="#">Home</a>
-			<a href="#" class="selected">Blog</a>
-			<a href="#">Pricing</a>
-			<a href="#">About</a>
-			<a href="#">Faq</a>
-			<a href="#">Contact</a>
-		</nav>
 
-	</div>
 
-</header>
 
-<!-- You need this element to prevent the content of the page from jumping up -->
-<div class="header-fixed-placeholder"></div>
 
-<!-- The content of your page would go here. -->
+    <!-- Header -->
+    <header class="header">
+	    
+	    
+	    <div class="container">
+	    <div class="media">
+  <img class="align-self-start mr-3" src="https://tiaweb.github.io/images/favicon.png" alt="tentangkami">
+  <div class="media-body">
+    <h5 class="mt-0">Tentang kami</h5>
+    <p style="text-align:justify">
+               
+<small>
 
-<style>
-.tiaweb-alert {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-  opacity: 1;
-  transition: opacity 0.6s;
-  margin-bottom: 15px;
-}
+Situs <a href="index.html"><b>Tiaweb</b></a> diluncurkan pada 20 Maret 2020 di <a href="https://id.m.wikipedia.org/wiki/Kota_Surabaya"><b>Surabaya</b></a> Kami membuat <a href="index.html"><b>Tiaweb</b></a> mempunyai <b>Visi</b> <b>Misi</b> Membuat Template web berbasis <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> atau Gratis<br/>
+<b>Visi</b>
+<ul style="list-style-type:circle;"><li>
+Menyebarkan Template web <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> lewat media Internet serta membuat web <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> dicintai dan digunakan banyak orang
+</li></ul>
+<b>Misi</b>
+<ul style="list-style-type:circle;"><li>
+Mempelajari Temblate web <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> lebih mendalam agar dapat menyebarkan informasi dan pembelajaran tentang <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> lebih banyak</li>
+<li>Membuat artikel semenarik mungkin agar semua orang mau membuka diri untuk menerima dan menggunakan <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a></li>
+<li>Meningkatkan minat banyak orang akan Open Source</li></ul>
+<br/>
+Website memang bisa membuat apapun yang kita lakukan tampak lebih meyakinkan. Entah Anda seorang freelance fotografer, graphic designer, penulis artikel atau blogger, pengusaha, sampai dengan pebisnis kuliner. Website bisa membuat Anda semakin serius, profesional, dan wah! Apalagi kalau itu semua dicapai tanpa mengeluarkan uang sepeser pun alias gratis
+<br/>
+<a href="index.html"><b>Tiaweb</b></a> menyediakan template Gratis, web bisnis yang berkualitas tinggi dan bersih dengan semua elemen dan fitur  berbagai macam Template Modern <b>Html</b>,<b>React Js</b>,<b>Vue Js</b>,<b>Angular JS,</b> Siap pakai anda tinggal mendownloadnya di Tiaweb secara gratis Tiaweb akan menjadi pilihan yang sempurna untuk Anda
+<br/><b>Langkah install Template Html</b>
+	<ul style="list-style-type:circle;">
+  <li>Persyaratan awal yang perlu anda ketahui untuk menginstal Template web Html adalah anda harus mengerti bahasa Html,Css dan Javascript</li></ul>
 
-.tiaweb-alert.success {background-color: #4CAF50;}
-.tiaweb-alert.info {background-color: #2196F3;}
-.tiaweb-alert.warning {background-color: #ff9800;}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-</style>
-<br/><br/>
-<div class="row">
-  <div class="col-sm-8">
-<div class="tiaweb-alert">
-  <span class="closebtn">&times;</span>  
-  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+ <b>Langkah insttal Template Javascript </b><ul style="list-style-type:circle;">
+<li>Persyaratan awal yang perlu anda ketahui untuk menginstal template Javascript</li>			
+</ul>  
+<ol>
+  <li>NodeJs</li>
+<li>Npm</li>
+<li>Git</li>
+</ol><hr/> update 24 Maret 2020
+		</small> </p>
+ </div>
 </div>
+	    </div>    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+         <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+    
 
-<div class="tiaweb-alert success">
-  <span class="closebtn">&times;</span>  
-  <strong>Success!</strong> Indicates a successful or positive action.
+   <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>Tentang kami</h6>
+                        <p class="p-small">Situs Tiaweb diluncurkan pada 20 Maret 2020 di Surabaya
+Kami membuat Tiaweb mempunyai Visi dan Misi <a href="tentang-kami.html"><font color="blue">selengkapnya</font></a></p>  </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>Menu</h6>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li><a href="html.html">Template Html</a></li>
+                            <li><a href="vuejs.html">Template Vuejs</a></li>
+                            <li><a href="reactjs.html">Template Reactjs</a></li>
+                            <li><a href="angularjs.html">Template Angular Js</a></li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <h6>Social media</h6>
+
+
+
+                        <ul class="list-unstyled li-space-lg p-small">
+                          
+                            <li><a href="https://www.instagram.com/tiaaweb">Instagram</a></li>
+                            <li><a href="https://facebook.com/tiashop.tiashop.376">Facebook</a></li>
+                            <li><a href="https://mobile.twitter.com/tia_web">Twitter</a></li>
+                           
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col fourth">
+
+                        <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://tiaweb.github.io" data-a2a-title="Tiaweb">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_email"></a>
 </div>
-
-<div class="tiaweb-alert info">
-  <span class="closebtn">&times;</span>  
-  <strong>Info!</strong> Indicates a neutral informative change or action.
-</div>
-
-<div class="tiaweb-alert warning">
-  <span class="closebtn">&times;</span>  
-  <strong>Warning!</strong> Indicates a warning that might need attention.
-	  </div>
-	  </div>
-  <div class="col-sm-4">col-sm-4</div>
-</div>
-
 <script>
-var close = document.getElementsByClassName("closebtn");
-var i;
-
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function(){
-    var div = this.parentElement;
-    div.style.opacity = "0";
-    setTimeout(function(){ div.style.display = "none"; }, 600);
-  }
-}
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.locale = "id";
 </script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-
-	$(document).ready(function(){
-
-		var showHeaderAt = 150;
-
-		var win = $(window),
-				body = $('body');
-
-		// Show the fixed header only on larger screen devices
-
-		if(win.width() > 400){
-
-			// When we scroll more than 150px down, we set the
-			// "fixed" class on the body element.
-
-			win.on('scroll', function(e){
-
-				if(win.scrollTop() > showHeaderAt) {
-					body.addClass('fixed');
-				}
-				else {
-					body.removeClass('fixed');
-				}
-			});
-
-		}
-
-	});
-
-</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+			    
+                          </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
 
 
-<!-- Demo ads. Please ignore and remove. -->
-<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
-<script>
-fetch("https://tiaweb.github.io/docs/html/css/docs/alert.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("tia").innerHTML = data;
-  });
-</script>
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a href="https://tiaweb.github.io">Tiaweb</a> - 2020</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+     
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T29C6CP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>
