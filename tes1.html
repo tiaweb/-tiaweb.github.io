@@ -1,318 +1,112 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<style>
 
-<head>
+.pre-wrapper{
+	position:relative;
+}
+.pre-wrapper pre{
+	padding-top: 25px;
+}
+.pre-wrapper .copy-snippet {
+	border-radius: 0;
+	min-width:55px;
+	background: none repeat scroll 0 0 transparent;
+	border: 1px solid #bbb;
+	color: #26589F;
+	font-family: 'HELEVETICA',sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.42rem;
+	margin: 0;
+	padding: 0px 5px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0;
+	position:absolute;
+	background:#ccc;
+	top:0;
+	left:0;
+}
+.pre-wrapper .copy-snippet:disabled{
+	color:#555;
+}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="google-site-verification=cGvkgt2oWQ-3kCOOxGHIcygm-J2wZANsFM5Huuw7eeg">
+</style>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Viso landing page HTML template is based on Bootstrap and it's designed for recruiting agencies to display job listings and gather CV applications through the included form.">
-    <meta name="google-site-verification" content="G3-7l_kYP77sUVyUvr21R7H8Xh_ciQyqZTOklsmecbY" />
+<pre>
+      <code class="language-html">&lt;!-- This is a button toggling the modal --&gt;
+&lt;button tiadian-toggle="target: #my-id" type="button"&gt;&lt;/button&gt;
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="Tiaweb"/> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="article" />
-
-    <!-- Webpage Title -->
-    <title>Viso - Recruiting Agency Landing Page HTML Template</title>
+&lt;!-- This is the modal --&gt;
+&lt;div id="my-id" tiadian-modal&gt;
+    &lt;div class="tiadian-modal-dialog tiadian-modal-body"&gt;
+        &lt;h2 class="tiadian-modal-title"&gt;&lt;/h2&gt;
+        &lt;button class="tiadian-modal-close" type="button"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+    </pre>
     
 
-<!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
 
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
-
-
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164531041-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-164531041-1');
+
+jQuery( document).ready(function($){
+	var copyid = 0;
+	$('pre').each(function(){
+		copyid++;
+		$(this).attr( 'data-copyid', copyid).wrap( '<div class="pre-wrapper"/>');
+		$(this).parent().css( 'margin', $(this).css( 'margin') );
+		$('<button class="copy-snippet">Copy</button>').insertAfter( $(this) ).data( 'copytarget',copyid );
+	});
+
+	$('body').on( 'click', '.copy-snippet', function(ev){
+		ev.preventDefault();
+
+		var $copyButton = $(this);
+
+		$pre = $(document).find('pre[data-copyid=' + $copyButton.data('copytarget' ) + ']');
+		if ( $pre.length ) {
+			var textArea = document.createElement("textarea");
+
+			// Place in top-left corner of screen regardless of scroll position.
+			textArea.style.position = 'fixed';
+			textArea.style.top = 0;
+			textArea.style.left = 0;
+
+			// Ensure it has a small width and height. Setting to 1px / 1em
+			// doesn't work as this gives a negative w/h on some browsers.
+			textArea.style.width = '2em';
+			textArea.style.height = '2em';
+			
+			// We don't need padding, reducing the size if it does flash render.
+			textArea.style.padding = 0;
+
+			// Clean up any borders.
+			textArea.style.border = 'none';
+			textArea.style.outline = 'none';
+			textArea.style.boxShadow = 'none';
+
+			// Avoid flash of white box if rendered for any reason.
+			textArea.style.background = 'transparent';
+
+			//Set value to text to be copied
+			textArea.value = $pre.html();
+
+			document.body.appendChild(textArea);
+			textArea.select();
+
+			try {
+				document.execCommand('copy');
+				$copyButton.text( 'Copied').prop('disabled', true);;
+			} catch (err) {
+				$copyButton.text( 'FAILED: Could not copy').prop('disabled', true);;
+			}
+			setTimeout(function(){
+				$copyButton.text( 'Copy').prop('disabled', false);;
+			}, 3000);
+		}
+	});
+});
+
 </script>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T29C6CP');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
-</head>
-<body data-spy="scroll" data-target=".fixed-top">
-   
-<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Viso</a> -->
-
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
-            
-            <!-- Mobile Menu Toggle Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-awesome fas fa-bars"></span>
-                <span class="navbar-toggler-awesome fas fa-times"></span>
-            </button>
-            <!-- end of mobile menu toggle button -->
-
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu<span class="sr-only">(current)</span></a>
-                    </li>
-                    
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="html.html"> Html</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="vuejs.html"> Vue js</a>
-                    </li>
-                    
-<li class="nav-item">
-                        <a class="nav-link" href="reactjs.html">React js</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="angularjs.html"> Angular js</a>
-                    </li>
-<li class="nav-item">
-                        <a class="nav-link" href="
-https://t.me/tiaweb">Komunitas</a>
-                    </li>
-
-                </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="https://facebook.com/tiashop.tiashop.376">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://www.instagram.com/tiaaweb">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-instagram fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div>
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
-
-
-
-
-    <!-- Header -->
-    <header class="header">
-	    
-	    
-	    <div class="container">
-
-<div class="uk-alert-primary" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-</div>
-
-<div class="uk-alert-success" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-</div>
-
-<div class="uk-alert-warning" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-</div>
-
-<div class="uk-alert-danger" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-</div>
-
-	    <div class="media">
-  <img class="align-self-start mr-3" src="https://tiaweb.github.io/images/favicon.png" alt="tentangkami">
-  <div class="media-body">
-<ul uk-accordion="collapsible: false">
-    <li>
-        <a class="uk-accordion-title" href="#">Item 1</a>
-        <div class="uk-accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </li>
-    <li>
-        <a class="uk-accordion-title" href="#">Item 2</a>
-        <div class="uk-accordion-content">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-        </div>
-    </li>
-    <li>
-        <a class="uk-accordion-title" href="#">Item 3</a>
-        <div class="uk-accordion-content">
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-        </div>
-    </li>
-</ul>
-
-
-    <h5 class="mt-0">Tentang kami</h5>
-    <p style="text-align:justify">
-               
-<small>
-
-Situs <a href="index.html"><b>Tiaweb</b></a> diluncurkan pada 20 Maret 2020 di <a href="https://id.m.wikipedia.org/wiki/Kota_Surabaya"><b>Surabaya</b></a> Kami membuat <a href="index.html"><b>Tiaweb</b></a> mempunyai <b>Visi</b> <b>Misi</b> Membuat Template web berbasis <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> atau Gratis<br/>
-<b>Visi</b>
-<ul style="list-style-type:circle;"><li>
-Menyebarkan Template web <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> lewat media Internet serta membuat web <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> dicintai dan digunakan banyak orang
-</li></ul>
-<b>Misi</b>
-<ul style="list-style-type:circle;"><li>
-Mempelajari Temblate web <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> lebih mendalam agar dapat menyebarkan informasi dan pembelajaran tentang <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a> lebih banyak</li>
-<li>Membuat artikel semenarik mungkin agar semua orang mau membuka diri untuk menerima dan menggunakan <a href="https://id.m.wikipedia.org/wiki/Perangkat_lunak_sumber_terbuka"><b>Open source</b></a></li>
-<li>Meningkatkan minat banyak orang akan Open Source</li></ul>
-<br/>
-Website memang bisa membuat apapun yang kita lakukan tampak lebih meyakinkan. Entah Anda seorang freelance fotografer, graphic designer, penulis artikel atau blogger, pengusaha, sampai dengan pebisnis kuliner. Website bisa membuat Anda semakin serius, profesional, dan wah! Apalagi kalau itu semua dicapai tanpa mengeluarkan uang sepeser pun alias gratis
-<br/>
-<a href="index.html"><b>Tiaweb</b></a> menyediakan template Gratis, web bisnis yang berkualitas tinggi dan bersih dengan semua elemen dan fitur  berbagai macam Template Modern <b>Html</b>,<b>React Js</b>,<b>Vue Js</b>,<b>Angular JS,</b> Siap pakai anda tinggal mendownloadnya di Tiaweb secara gratis Tiaweb akan menjadi pilihan yang sempurna untuk Anda
-<br/><b>Langkah install Template Html</b>
-	<ul style="list-style-type:circle;">
-  <li>Persyaratan awal yang perlu anda ketahui untuk menginstal Template web Html adalah anda harus mengerti bahasa Html,Css dan Javascript</li></ul>
-
- <b>Langkah insttal Template Javascript </b><ul style="list-style-type:circle;">
-<li>Persyaratan awal yang perlu anda ketahui untuk menginstal template Javascript</li>			
-</ul>  
-<ol>
-  <li>NodeJs</li>
-<li>Npm</li>
-<li>Git</li>
-</ol><hr/> update 24 Maret 2020
-		</small> </p>
- </div>
-</div>
-	    </div>    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-         <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
-    
-
-   <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-col first">
-                        <h6>Tentang kami</h6>
-                        <p class="p-small">Situs Tiaweb diluncurkan pada 20 Maret 2020 di Surabaya
-Kami membuat Tiaweb mempunyai Visi dan Misi <a href="tentang-kami.html"><font color="blue">selengkapnya</font></a></p>  </div> <!-- end of footer-col -->
-                    <div class="footer-col second">
-                        <h6>Menu</h6>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li><a href="html.html">Template Html</a></li>
-                            <li><a href="vuejs.html">Template Vuejs</a></li>
-                            <li><a href="reactjs.html">Template Reactjs</a></li>
-                            <li><a href="angularjs.html">Template Angular Js</a></li>
-                        </ul>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col third">
-                        <h6>Social media</h6>
-
-
-
-                        <ul class="list-unstyled li-space-lg p-small">
-                          
-                            <li><a href="https://www.instagram.com/tiaaweb">Instagram</a></li>
-                            <li><a href="https://facebook.com/tiashop.tiashop.376">Facebook</a></li>
-                            <li><a href="https://mobile.twitter.com/tia_web">Twitter</a></li>
-                           
-                        </ul>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col fourth">
-
-                        <!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://tiaweb.github.io" data-a2a-title="Tiaweb">
-<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_twitter"></a>
-<a class="a2a_button_email"></a>
-</div>
-<script>
-var a2a_config = a2a_config || {};
-a2a_config.onclick = 1;
-a2a_config.locale = "id";
-</script>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->
-			    
-                          </div> <!-- end of footer-col -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="https://tiaweb.github.io">Tiaweb</a> - 2020</p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-     
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T29C6CP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-</body>
-
-</html>
