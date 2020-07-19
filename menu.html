@@ -230,7 +230,7 @@ https://t.me/tiaweb">Komunitas</a>
     </div>
   </div>
 </div>
-		
+	<icd></icd>	
 		<!--akhir-->
 	    </div>
   <!-- end of container -->
@@ -311,7 +311,17 @@ a2a_config.locale = "id";
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     
-    	
+    	  <script>
+	  
+fetch("https://tiaweb.github.io/icdmenu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("icd").innerHTML = data;
+  });
+	    </script>
+	    
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
